@@ -4,21 +4,14 @@ hero:
   weight: 10
   template: hero
 
-  #backgroundImage:
-  #  path: "images/templates/hero"
-  #  filename:
-  #    desktop: "gradient-desktop.webp"
-  #    mobile: "gradient-mobile.webp"
-
-  title: "Sitrep"
-  subtitle: A lightweight, **modern documentation** theme for Hugo. Easily customised for building **fast**, **secure**, and **SEO-friendly** documentation sites.
+  title: "Sitrep by F-ELD"
+  subtitle: Robuste, miliztaugliche und moderne digitale Lagedarstellung zur raschen und fundierten Entscheidfindung und erfolgreichen Ereignisbewältigung in sämtlichen Lagen.
 
   titleLogo:
     path: "images/logos"
     filename: "sitrep_logo.png"
     alt: "Sitrep Logo"
     height: 80px
-
 
   image:
     path: "images/landing" # path to image under configured assets directory. default 'images'
@@ -39,8 +32,13 @@ hero:
   info: "**Open Source** Apache-2.0 Lizenz."
 
 featureGrid:
+  enable: false
+imageCompare:
+  enable: false
+
+sitrepFeature:
   enable: true
-  weight: 20
+  weight: 18 
   template: feature grid
   title: "Was zeichnet Sitrep aus?"
   subtitle: "Sitrep ist eine Software zur elektronischen Lagedarstellung und unterstützt und vereinfacht Prozesse in der Lageverabeitung. Folgendes zeichnet Sitrep besonders aus:"
@@ -81,24 +79,23 @@ featureGrid:
       icon: palette
       description: Built on Bootstrap 5, Lotus Docs allows for a familiar, flexible, and intuitive developer experience. Easily customise your site via SCSS variables and files.
 
-#imageText:
-#  enable: true
-#  weight: 15
+#editor:
+#  enable: false
+#  weight: 12
+#  template: image text
 #  title: "Customise The Lotus Docs Appearance"
 #  subtitle: "Much of Lotus Docs' appearance can be customised. Dark mode is optional (enabled by default) and you can choose a Google font that suites you via the config parameters."
 #  ctaButton:
-#      text: Learn more
-#      url: "/docs/"
+#    text: Learn more
+#    url: "/docs/"
 #  image:
-#      path: "images/landing"
-#      filename: "MessageEditor.png"
-#      alt: "Sirep Journal Editor"
+#    path: "images/landing"
+#    filename: "MessageEditor.png"
+#    alt: "Sirep Journal Editor"
 #  list:
 #  - text: Blazing fast page loads
 #    icon: speed
-#
 #  - text: Sensible default SEO friendly settings
 #    icon: area_chart
-#
 #  - text: Designed to be accessible
 #    icon: accessibility

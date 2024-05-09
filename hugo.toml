@@ -1,0 +1,18 @@
+baseURL = 'http://www.f-eld.ch/'
+languageCode = 'de-CH'
+title = 'Verein Förderung der elektronischen Lagedarstellung'
+
+[module]
+    [[module.imports]]
+        path = "github.com/colinwilson/lotusdocs"
+        disable = false
+    [[module.imports]]
+        path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+        disable = false
+
+
+[params]
+     google_fonts = [["B612", "300, 400, 600, 700"],["B612 Mono", "500, 700"],["Fira Code", "500, 700"]]
+     sans_serif_font = "B612"
+     secondary_font = "B612"
+     mono_font = "Fira Code"

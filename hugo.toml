@@ -16,3 +16,6 @@ title = 'Verein Förderung der elektronischen Lagedarstellung'
      sans_serif_font = "B612"
      secondary_font = "B612"
      mono_font = "Fira Code"
+
+[params.footer]
+     copyright = "Verein Förderung der elektronischen Lagedarstellung F-ELD"

@@ -25,9 +25,9 @@ hero:
     btnText: "Demo"
     url: "https://demo.sitrep.ch"
   cta2Button:
-    icon: construction
-    btnText: "Dokumentation"
-    url: "/docs"
+    icon: info
+    btnText: "Mehr Informationen"
+    url: "https://sitrep.ch"
 
   info: "**Open Source** Apache-2.0 Lizenz."
 
@@ -38,11 +38,11 @@ featureGrid:
   title: "Was zeichnet Sitrep aus?"
   subtitle: "Sitrep ist eine Software zur elektronischen Lagedarstellung und unterstützt und vereinfacht Prozesse in der Lageverabeitung. Folgendes zeichnet Sitrep besonders aus:"
   items:
-    - title: Schnell
+    - title: schnell
       icon: speed
       description: Sitrep fühlt sich schnell an um damit zu Arbeiten. Prozesse wurden für den jeweiligen Nutzen optimiert und fühlen sich einfach richtig an.
 
-    - title: Einfach
+    - title: einfach
       icon: accessibility
       description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
 
@@ -52,15 +52,15 @@ featureGrid:
 
     - title: Features
       icon: settings
-      description: Journalführung, Triage und Lagekarten werden aktuell unterstützt. Mitteltabellen, Bedürfnisse / Pendenzen / Anträge und ein Ereignis-Dashboard werden aktuell entwickelt.
+      description: Journalführung, Triage und Lagekarten werden aktuell unterstützt. Mitteltabellen, Bedürfnisse / Pendenzen / Anträge und ein Ereignis-Dashboard werden aktuell entwickelt. Sitrep wird vom gemeinnützigen Verein F-ELD aktiv weiterentwickelt.
 
-    - title: Mehrsprachig
+    - title: mehrsprachig
       icon: translate
       description: Sitrep ist verfügbar auf Deutsch, Französisch, Italienisch und Englisch.
 
-    - title: Aktiv weiterentwickelt
-      icon: change_history
-      description: Sitrep wird vom gemeinnützigen Verein F-ELD aktiv weiterentwickelt.
+    - title: effizient und essourcenschonend
+      icon: yard
+      description: Sitrep ist sehr ressourcenschonend und kann auch auf mobilen Mini-Computern wie einem Raspberry Pi laufen. 
 
 
 imageCompare:

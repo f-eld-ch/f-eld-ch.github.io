@@ -121,10 +121,39 @@ editor:
     path: "images/landing"
     filename: "JournalEditor1.png"
     alt: "Sirep Journal Editor"
+  imgOrder:
+      desktop: 2
+      mobile: 1
   list:
   - text: Einfach und verständlich
     icon: accessibility
   - text: Markdown-Formatierung möglich
     icon: color_lens
   - text: Schnelle Erfassung von Nachrichten
+    icon: all_inbox
+
+triage:
+  enable: true
+  weight: 22
+  template: image text
+  title: "Triage"
+  subtitle: |
+    Die Nachrichten-Triage erlaubt es Fachbereiche einer Nachricht zuzuordnen und die Nachricht als Schlüsselnachricht zu markieren.
+    Nach der Triage kann auch direkt ein Meldezettel generiert werden, welcher zeitsparend ausgedruckt werden kann und physisch an die Fachbereiche verteilt werden kann, falls diese nicht direkt mit Sitrep arbeiten.
+  #ctaButton:
+  #  text: Learn more
+  #  url: "/docs/"
+  image:
+    path: "images/landing"
+    filename: "Triage.png"
+    alt: "Sirep Nachrichten Triage"
+  imgOrder:
+      desktop: 1
+      mobile: 1
+  list:
+  - text: Fachbereiche sind beliebig auf dem Ereignis erweiterbar
+    icon: add_circle
+  - text: Schnelle und fokussierte Triage
+    icon: speed
+  - text: Funktioniert nach dem Zero-Inbox-Prinzip mithilfe des "Triage pendent" Filter
     icon: all_inbox

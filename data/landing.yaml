@@ -31,66 +31,100 @@ hero:
 
   info: "**Open Source** Apache-2.0 Lizenz."
 
-#featureGrid:
-#  enable: true
-#  weight: 18 
-#  template: feature grid
-#  title: "Was zeichnet Sitrep aus?"
-#  subtitle: "Sitrep ist eine Software zur elektronischen Lagedarstellung und unterstützt und vereinfacht Prozesse in der Lageverabeitung. Folgendes zeichnet Sitrep besonders aus:"
-#  items:
-#    - title: Fast
-#      icon: speed
-#      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images.
-#
-#    - title: SEO Friendly
-#      icon: trending_up
-#      description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
-#
-#    - title: Secure by default
-#      icon: lock
-#      description: Lotus Docs' default configuration scores A+ on Mozilla Observatory. You can update the default Security Headers to suit your requirements.
-#
-#    - title: Optional Features
-#      icon: settings
-#      description: Many Lotus Docs features are configurable via optional parameters. Require DocSearch for your site? Then enable it via a single setting.
-#
-#    - title: Deploy to Vercel
-#      icon: change_history
-#      description: Deploy to Vercel in seconds. Vercel Functions, Vercel Redirects/Rewrites, and Vercel Headers are all configurable for an enriched experience.
-#
-#    - title: Dark Mode
-#      icon: dark_mode
-#      description: "Prefer not to be blasted by the sun while reading? Switch to a low-light UI with the click of a button. Modify colour variables to match your branding."
-#
-#    - title: Search by DocSearch
-#      icon: search
-#      description: Search your docs with DocSearch. A powerful, efficient and accessible search solution built on Algolia Crawler & Autocomplete.
-#
-#    - title: Multilingual Support
-#      icon: translate
-#      description: Lotus Docs supports Hugo's Multilingual Mode. Create documentation in multiple languages side by side with i18n support.
-#
-#    - title: Bootstrap v5
-#      icon: palette
-#      description: Built on Bootstrap 5, Lotus Docs allows for a familiar, flexible, and intuitive developer experience. Easily customise your site via SCSS variables and files.
+featureGrid:
+  enable: true
+  weight: 18 
+  template: feature grid
+  title: "Was zeichnet Sitrep aus?"
+  subtitle: "Sitrep ist eine Software zur elektronischen Lagedarstellung und unterstützt und vereinfacht Prozesse in der Lageverabeitung. Folgendes zeichnet Sitrep besonders aus:"
+  items:
+    - title: Schnell
+      icon: speed
+      description: Sitrep fühlt sich schnell an um damit zu Arbeiten. Prozesse wurden für den jeweiligen Nutzen optimiert und fühlen sich einfach richtig an.
 
-#editor:
-#  enable: false
-#  weight: 12
-#  template: image text
-#  title: "Customise The Lotus Docs Appearance"
-#  subtitle: "Much of Lotus Docs' appearance can be customised. Dark mode is optional (enabled by default) and you can choose a Google font that suites you via the config parameters."
-#  ctaButton:
-#    text: Learn more
-#    url: "/docs/"
-#  image:
-#    path: "images/landing"
-#    filename: "MessageEditor.png"
-#    alt: "Sirep Journal Editor"
-#  list:
-#  - text: Blazing fast page loads
-#    icon: speed
-#  - text: Sensible default SEO friendly settings
-#    icon: area_chart
-#  - text: Designed to be accessible
-#    icon: accessibility
+    - title: Einfach
+      icon: accessibility
+      description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
+
+    - title: Open Source
+      icon: lock_open
+      description: Sitrep ist Open-Source Software. Jeder kann sie so verwenden und selber betreiben, verändern und weiterentwickeln, muss aber alle Änderungen auch wieder an das Projekt zurückgeben.
+
+    - title: Features
+      icon: settings
+      description: Journalführung, Triage und Lagekarten werden aktuell unterstützt. Mitteltabellen, Bedürfnisse / Pendenzen / Anträge und ein Ereignis-Dashboard werden aktuell entwickelt.
+
+    - title: Mehrsprachig
+      icon: translate
+      description: Sitrep ist verfügbar auf Deutsch, Französisch, Italienisch und Englisch.
+
+    - title: Aktiv weiterentwickelt
+      icon: change_history
+      description: Sitrep wird vom gemeinnützigen Verein F-ELD aktiv weiterentwickelt.
+
+
+imageCompare:
+  enable: false
+  weight: 30
+  template: image compare
+  title: Customise The Lotus Docs Appearance
+  subtitle: Much of Lotus Docs' appearance can be customised. Dark mode is optional (enabled by default) and you can choose a Google font that suites you via the config parameters.
+
+  items:
+    - title: Kartenmaterial
+      config: {
+        startingPoint: 75,
+        addCircle: true,
+        addCircleBlur: false,
+        showLabels: true,
+        labelOptions: {
+          before: 'Dark',
+          after: 'Light',
+          onHover: false
+        }
+      }
+      imagePath: "images/landing"
+      imageBefore: "Lage_BK.png"
+      imageAfter: "Lage_SK.png"
+
+    - title: BABS Symbole
+      config: {
+        controlColor: "#3C4257",
+        startingPoint: 25,
+        addCircle: true,
+        addCircleBlur: false,
+        showLabels: true,
+        labelOptions: {
+          before: 'Inter',
+          after: 'Life Saver',
+          onHover: false
+        }
+      }
+      imagePath: "images/landing"
+      imageBefore: "Lage1.png"
+      imageAfter: "Lage2.png"
+
+editor:
+  enable: true
+  weight: 21
+  template: image text
+  title: "Journalführung"
+  subtitle: |
+    Im Journal-Modul von Sitrep ist eine einfache Nachrichtenerfassung möglich.
+    Diese beinhaltet die Erfassung von Absender, Empfänger mit ihren jeweiligen Kommunikationskanal spezifischen Angaben wie Telefonnummer, Funkkanal oder E-Mail-Adresse.
+    Bei der Zeit wird die aktuelle Zeit verwendet, aber es kann auch eine andere Zeit ausgewählt werden.
+    Die Nachricht selber kann auch mit Markdown-Syntax formatiert werden, damit Links oder Aufzählungen schöner aussehen.
+  #ctaButton:
+  #  text: Learn more
+  #  url: "/docs/"
+  image:
+    path: "images/landing"
+    filename: "JournalEditor1.png"
+    alt: "Sirep Journal Editor"
+  list:
+  - text: Einfach und verständlich
+    icon: accessibility
+  - text: Markdown-Formatierung möglich
+    icon: color_lens
+  - text: Schnelle Erfassung von Nachrichten
+    icon: all_inbox

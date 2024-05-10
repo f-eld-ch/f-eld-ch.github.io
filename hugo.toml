@@ -3,6 +3,7 @@ languageCode = 'de-CH'
 title = 'Verein Förderung der elektronischen Lagedarstellung'
 
 [module]
+    replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
     [[module.imports]]
         path = "github.com/colinwilson/lotusdocs"
         disable = false

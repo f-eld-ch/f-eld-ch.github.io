@@ -17,7 +17,7 @@ Der Verein fördert und verbreitet die digitale Lagebewirtschaftung in Führungs
 
 ## Mitglieder
 
-Die Mitglieder des Vereins F-ELD sind Profis aus Zivilschutz und Militär. Sie sind bestens mit Stabsarbeit und einer effizienten Führungsunterstützung vertraut.
+Die Mitglieder des Vereins F-ELD sind Fachleute aus Zivilschutz und Militär. Sie kennen die Stabsarbeit und die Führungsunterstützung aus der Praxis.
 
 ## Statuten
 

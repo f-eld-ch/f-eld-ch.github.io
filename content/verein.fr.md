@@ -18,7 +18,7 @@ L'association promeut et diffuse le suivi numérique de la situation dans les é
 
 ## Membres
 
-Les membres de l'association F-ELD sont des professionnels de la protection civile et de l'armée. Ils connaissent parfaitement le travail d'état-major et une aide à la conduite efficace.
+Les membres de l'association F-ELD sont des spécialistes de la protection civile et de l'armée. Ils connaissent le travail d'état-major et l'aide à la conduite par la pratique.
 
 ## Statuts
 

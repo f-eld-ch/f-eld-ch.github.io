@@ -18,7 +18,7 @@ L'associazione promuove e diffonde l'elaborazione digitale della situazione negl
 
 ## Soci
 
-I membri dell'associazione F-ELD sono specialisti della protezione civile e dell'esercito, con esperienza pratica nel lavoro di stato maggiore e nell'aiuto alla condotta.
+I soci attivi dell'associazione F-ELD sono specialisti della protezione civile e dell'esercito, con esperienza pratica nel lavoro di stato maggiore e nell'aiuto alla condotta.
 
 ## Statuti
 

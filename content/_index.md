@@ -14,7 +14,7 @@ facts:
   - title: "Gemeinnützig und ehrenamtlich"
     text: "Der Verein arbeitet nicht gewinnorientiert und verwendet alle Einnahmen zur Erfüllung seines Zwecks. Seine Organe sind grundsätzlich ehrenamtlich tätig."
   - title: "Aus der Praxis"
-    text: "Die Mitglieder sind Fachleute aus Zivilschutz und Militär mit Praxiserfahrung in Stabsarbeit und Führungsunterstützung."
+    text: "Die Aktivmitglieder sind Fachleute aus Zivilschutz und Militär mit Praxiserfahrung in Stabsarbeit und Führungsunterstützung."
   - title: "sitrep"
     text: "Unsere Software für die elektronische Lagedarstellung heisst sitrep. Mehr dazu auf [sitrep.ch](https://sitrep.ch)."
   - title: "Schulungen"

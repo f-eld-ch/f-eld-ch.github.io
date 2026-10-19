@@ -14,7 +14,7 @@ facts:
   - title: "D'utilité publique et bénévole"
     text: "L'association ne poursuit pas de but lucratif et utilise toutes ses recettes pour remplir son but. Ses organes travaillent en principe bénévolement."
   - title: "Issus de la pratique"
-    text: "Les membres sont des spécialistes de la protection civile et de l'armée, avec une expérience pratique du travail d'état-major et de l'aide à la conduite."
+    text: "Les membres actifs sont des spécialistes de la protection civile et de l'armée, avec une expérience pratique du travail d'état-major et de l'aide à la conduite."
   - title: "sitrep"
     text: "Notre logiciel de représentation électronique de la situation s'appelle sitrep. Plus d'informations sur [sitrep.ch](https://sitrep.ch)."
   - title: "Formations"

@@ -38,6 +38,7 @@ layouts/                   site specific overrides: index.html (home), partials/
 static/                    site specific static files (overrides of the theme, e.g. brand/ logos)
 themes/sitrep/             COPY of the theme of sitrep.ch, do not edit (see below)
 scripts/sync-theme.sh      copy the theme from ../sitrep.ch
+scripts/sync-brand.sh      copy the F-ELD lockups from ../brand
 scripts/cloudflare-build.sh  build script for Cloudflare Workers Builds
 wrangler.jsonc             Cloudflare Workers config: serves public/ as static assets
 .hugo-version              pinned Hugo version
@@ -51,11 +52,11 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
   changes go into `layouts/` (they override the theme's files) and `static/`.
 - Design rules (brand tokens, one font family, light/dark mode, 44px touch targets, no JS dependencies) are
   described in the AGENTS.md of sitrep.ch.
-- **Logo:** `static/brand/feld-lockup-light.png` and `feld-lockup-dark.png` are a **temporary raster draft** of the
-  F-ELD lockup (transparent, trimmed, the dark one has a white wordmark), used by `layouts/partials/header.html`
-  and `layouts/index.html`. Replace them with the SVG lockups once they are in the `f-eld-ch/brand` repository
-  (same names as in the theme: `lockup-on-paper.svg`, `lockup-on-ink.svg`, `lockup-blue.svg`, `lockup-white.svg`)
-  and adjust `width`, `height` and the inline `aspect-ratio` of the logo images to the new proportions.
+- **Logo:** the F-ELD lockups come from the `f-eld-ch/brand` repository (`logo/feld-lockup-*.svg`: the
+  sitrep symbol with the wordmark F-ELD). `scripts/sync-brand.sh` copies the four used variants to
+  `static/brand/lockup-*.svg`, which override the sitrep.ch lockups of the theme. The proportions differ
+  (308×96 instead of 393×96), so the logo images in `layouts/partials/header.html` and `layouts/index.html`
+  set their own `width`, `height` and `aspect-ratio`. The favicon is the shared symbol.
 
 ## Content
 

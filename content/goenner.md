@@ -11,6 +11,6 @@ Der Verein F-ELD arbeitet nicht gewinnorientiert und verwendet alle Einnahmen zu
 
 ## Beitritt und Fragen
 
-Zu Beitritt, Beitrag und Schulungen melden Sie sich bei uns: [info@sitrep.ch](mailto:info@sitrep.ch)
+Zu Beitritt, Beitrag und Schulungen melden Sie sich bei uns: [info@f-eld.ch](mailto:info@f-eld.ch)
 
 Mehr über den Verein lesen Sie unter [Der Verein]({{< relref "/verein" >}}).

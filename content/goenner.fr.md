@@ -12,6 +12,6 @@ L'association F-ELD ne poursuit pas de but lucratif et utilise toutes ses recett
 
 ## Adhésion et questions
 
-Pour l'adhésion, la cotisation et les formations, contactez-nous : [info@sitrep.ch](mailto:info@sitrep.ch)
+Pour l'adhésion, la cotisation et les formations, contactez-nous : [info@f-eld.ch](mailto:info@f-eld.ch)
 
 Plus d'informations sur l'association sous [L'association]({{< relref "/verein" >}}).

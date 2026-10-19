@@ -77,7 +77,8 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
   purpose is the promotion and spread of digital situation management in command staffs and the development
   and spread of open-source software for it; it works non-profit and uses all income for its purpose;
   organs are honorary; it offers sitrep trainings for Gönnermitglieder (supporting members).
-- The contact address is `info@sitrep.ch` (`params.email`).
+- Questions about the association go to `info@f-eld.ch` (`params.email`, also the footer link). Questions about sitrep or
+  the service go to `info@sitrep.ch`.
 - Link to sitrep via `params.sitrep` or `https://sitrep.ch`; do not duplicate its product content here.
 - Link between pages with `{{< relref "/path" >}}`.
 

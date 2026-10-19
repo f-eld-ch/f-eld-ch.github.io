@@ -69,7 +69,7 @@ defaultContentLanguageInSubdir = false
 [params]
   description = "Verein Förderung der elektronischen Lagedarstellung"
   repo = "https://github.com/f-eld-ch"
-  email = "info@sitrep.ch"
+  email = "info@f-eld.ch"
   sitrep = "https://sitrep.ch"
   defaultlang = "de"
 

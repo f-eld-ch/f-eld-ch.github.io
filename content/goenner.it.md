@@ -12,6 +12,6 @@ L'associazione F-ELD non persegue scopo di lucro e utilizza tutte le entrate per
 
 ## Adesione e domande
 
-Per l'adesione, la quota e le formazioni scriveteci: [info@sitrep.ch](mailto:info@sitrep.ch)
+Per l'adesione, la quota e le formazioni scriveteci: [info@f-eld.ch](mailto:info@f-eld.ch)
 
 Maggiori informazioni sull'associazione sotto [L'associazione]({{< relref "/verein" >}}).

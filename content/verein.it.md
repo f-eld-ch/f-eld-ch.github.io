@@ -28,4 +28,5 @@ Il software dell'associazione si chiama **sitrep**. È open source ([AGPL-3.0](h
 
 ## Contatto
 
-Domande sull'associazione, su sitrep o sul servizio: [info@sitrep.ch](mailto:info@sitrep.ch)
+- **Domande sull'associazione e sui soci sostenitori:** [info@f-eld.ch](mailto:info@f-eld.ch)
+- **Domande su sitrep o sul servizio:** [info@sitrep.ch](mailto:info@sitrep.ch)

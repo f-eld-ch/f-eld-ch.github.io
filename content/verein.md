@@ -27,4 +27,5 @@ Die Software des Vereins heisst **sitrep**. Sie ist Open Source ([AGPL-3.0](http
 
 ## Kontakt
 
-Fragen zum Verein, zu sitrep oder zum Service: [info@sitrep.ch](mailto:info@sitrep.ch)
+- **Fragen zum Verein und zur Gönnermitgliedschaft:** [info@f-eld.ch](mailto:info@f-eld.ch)
+- **Fragen zu sitrep oder zum Service:** [info@sitrep.ch](mailto:info@sitrep.ch)

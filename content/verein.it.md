@@ -16,6 +16,10 @@ L'associazione promuove e diffonde l'elaborazione digitale della situazione negl
 - Per i propri **soci sostenitori** offre formazioni su sitrep per gli stati maggiori e l'aiuto alla condotta. Maggiori informazioni sotto [Diventare socio sostenitore]({{< relref "/goenner" >}}).
 - I suoi **organi** operano in linea di principio a titolo volontario.
 
+## Statuti
+
+Gli statuti dell'associazione sono pubblici: [Statuti dell'associazione F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub) (in tedesco).
+
 ## sitrep
 
 Il software dell'associazione si chiama **sitrep**. È open source ([AGPL-3.0](https://github.com/f-eld-ch/sitrep/blob/HEAD/LICENSE)) e viene sviluppato e gestito dall'associazione. Funzionalità, demo e documentazione si trovano su [sitrep.ch](https://sitrep.ch), il codice sorgente nel [repository GitHub](https://github.com/f-eld-ch/sitrep).

@@ -16,6 +16,10 @@ L'association promeut et diffuse le suivi numérique de la situation dans les é
 - Pour ses **membres donateurs**, elle propose des formations sitrep pour les états-majors et l'aide à la conduite. Plus d'informations sous [Devenir membre donateur]({{< relref "/goenner" >}}).
 - Ses **organes** travaillent en principe bénévolement.
 
+## Statuts
+
+Les statuts de l'association sont publics : [Statuts de l'association F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub) (en allemand).
+
 ## sitrep
 
 Le logiciel de l'association s'appelle **sitrep**. Il est open source ([AGPL-3.0](https://github.com/f-eld-ch/sitrep/blob/HEAD/LICENSE)) et développé et exploité par l'association. Vous trouverez les fonctionnalités, la démo et la documentation sur [sitrep.ch](https://sitrep.ch), et le code source dans le [dépôt GitHub](https://github.com/f-eld-ch/sitrep).

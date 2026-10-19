@@ -15,6 +15,10 @@ Der Verein fördert und verbreitet die digitale Lagebewirtschaftung in Führungs
 - Für seine **Gönnermitglieder** bietet er sitrep-Schulungen für Stäbe und die Führungsunterstützung an. Mehr dazu unter [Gönnermitglied werden]({{< relref "/goenner" >}}).
 - Seine **Organe** sind grundsätzlich ehrenamtlich tätig.
 
+## Statuten
+
+Die Statuten des Vereins sind öffentlich einsehbar: [Statuten des Vereins F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub).
+
 ## sitrep
 
 Die Software des Vereins heisst **sitrep**. Sie ist Open Source ([AGPL-3.0](https://github.com/f-eld-ch/sitrep/blob/HEAD/LICENSE)) und wird vom Verein entwickelt und betrieben. Funktionen, Demo-Umgebung und Dokumentation finden Sie auf [sitrep.ch](https://sitrep.ch), den Quellcode im [GitHub-Repository](https://github.com/f-eld-ch/sitrep).

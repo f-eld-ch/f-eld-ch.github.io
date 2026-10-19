@@ -60,9 +60,14 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
 
 ## Content
 
-- German only (`/`). French and Italian can be added like on sitrep.ch (`*.fr.md`, `*.it.md`, menus per
-  language, translated URLs via `slug:`); translations should be reviewed by native speakers.
-- Address readers with "Sie". Keep the voice plain and direct. The association is written **F-ELD**, the
+- German is the default language and lives at `/`, French at `/fr/`, Italian at `/it/`. Translate a content file
+  with a sibling `*.fr.md` / `*.it.md` and give it a translated `slug:` (for example `verein.fr.md` →
+  `/fr/association/`). Menus are defined per language in `hugo.toml`. UI strings come from the theme
+  (`themes/sitrep/i18n`).
+- Translations are drafted by us and **should be reviewed by native speakers**. Use the same terms as sitrep.ch
+  (FR: états-majors, aide à la conduite, membre donateur; IT: stati maggiori, aiuto alla condotta, socio
+  sostenitore). The association name stays *Verein Förderung der elektronischen Lagedarstellung*.
+- Address readers with "Sie" in German, "vous" in French, "voi" in Italian. Keep the voice plain and direct. The association is written **F-ELD**, the
   software always **`sitrep`** (lowercase).
 - Only state facts you can source (the statutes, the sitrep README). Do not invent prices, membership terms,
   training offers or dates. Facts so far: non-profit association under Art. 60 ff. ZGB with seat in Altdorf UR;

@@ -1,0 +1,40 @@
+---
+title: "F-ELD"
+hero_ctas:
+  - label: "Diventare socio sostenitore"
+    url: "socio-sostenitore/"
+  - label: "L'associazione"
+    url: "associazione/"
+facts_title: "Che cosa fa F-ELD?"
+facts:
+  - title: "Promuovere l'elaborazione della situazione"
+    text: "Promuoviamo e diffondiamo l'elaborazione digitale della situazione negli stati maggiori."
+  - title: "Open source"
+    text: "Sviluppiamo e diffondiamo software open source che serve a questo scopo."
+  - title: "Di pubblica utilità"
+    text: "L'associazione non persegue scopo di lucro e utilizza tutte le entrate per raggiungere il proprio scopo."
+  - title: "A titolo volontario"
+    text: "Gli organi dell'associazione operano in linea di principio a titolo volontario."
+  - title: "sitrep"
+    text: "Il nostro software per la rappresentazione elettronica della situazione si chiama sitrep. Maggiori informazioni su [sitrep.ch](https://sitrep.ch)."
+  - title: "Formazioni"
+    text: "Per i nostri soci sostenitori offriamo formazioni su sitrep per gli stati maggiori e l'aiuto alla condotta."
+about:
+  title: "E sitrep?"
+  text: "sitrep è il software open source dell'associazione per la rappresentazione elettronica della situazione negli stati maggiori. Funzionalità, demo e documentazione: [sitrep.ch](https://sitrep.ch)."
+cta_title: "Partecipare"
+cta:
+  - title: "Diventare socio sostenitore"
+    text: "Sostenete lo sviluppo di sitrep e approfittate delle formazioni per il vostro stato maggiore."
+    label: "Ai soci sostenitori"
+    url: "socio-sostenitore/"
+  - title: "L'associazione"
+    text: "Scopo, organizzazione e modo di lavorare dell'associazione F-ELD."
+    label: "Di più sull'associazione"
+    url: "associazione/"
+  - title: "Scoprire sitrep"
+    text: "Il software dell'associazione: funzionalità, demo e documentazione."
+    label: "A sitrep.ch"
+    url: "https://sitrep.ch"
+---
+L'associazione F-ELD promuove l'elaborazione digitale della situazione negli stati maggiori e sviluppa software open source a tale scopo.

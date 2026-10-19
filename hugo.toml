@@ -15,19 +15,56 @@ defaultContentLanguageInSubdir = false
     locale = "de-CH"
     label = "Deutsch"
     weight = 1
-
-[[menus.main]]
-  name = "Der Verein"
-  pageRef = "/verein"
-  weight = 10
-[[menus.main]]
-  name = "Gönnermitglied werden"
-  pageRef = "/goenner"
-  weight = 20
-[[menus.main]]
-  name = "sitrep"
-  url = "https://sitrep.ch"
-  weight = 30
+    [languages.de.params]
+      description = "Verein Förderung der elektronischen Lagedarstellung"
+    [[languages.de.menus.main]]
+      name = "Der Verein"
+      pageRef = "/verein"
+      weight = 10
+    [[languages.de.menus.main]]
+      name = "Gönnermitglied werden"
+      pageRef = "/goenner"
+      weight = 20
+    [[languages.de.menus.main]]
+      name = "sitrep"
+      url = "https://sitrep.ch"
+      weight = 30
+  [languages.fr]
+    locale = "fr-CH"
+    label = "Français"
+    weight = 2
+    [languages.fr.params]
+      description = "Verein Förderung der elektronischen Lagedarstellung"
+    [[languages.fr.menus.main]]
+      name = "L'association"
+      pageRef = "/verein"
+      weight = 10
+    [[languages.fr.menus.main]]
+      name = "Devenir membre donateur"
+      pageRef = "/goenner"
+      weight = 20
+    [[languages.fr.menus.main]]
+      name = "sitrep"
+      url = "https://sitrep.ch"
+      weight = 30
+  [languages.it]
+    locale = "it-CH"
+    label = "Italiano"
+    weight = 3
+    [languages.it.params]
+      description = "Verein Förderung der elektronischen Lagedarstellung"
+    [[languages.it.menus.main]]
+      name = "L'associazione"
+      pageRef = "/verein"
+      weight = 10
+    [[languages.it.menus.main]]
+      name = "Diventare socio sostenitore"
+      pageRef = "/goenner"
+      weight = 20
+    [[languages.it.menus.main]]
+      name = "sitrep"
+      url = "https://sitrep.ch"
+      weight = 30
 
 [params]
   description = "Verein Förderung der elektronischen Lagedarstellung"

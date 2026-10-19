@@ -1,0 +1,40 @@
+---
+title: "F-ELD"
+hero_ctas:
+  - label: "Devenir membre donateur"
+    url: "membre-donateur/"
+  - label: "L'association"
+    url: "association/"
+facts_title: "Que fait F-ELD ?"
+facts:
+  - title: "Promouvoir le suivi de la situation"
+    text: "Nous promouvons et diffusons le suivi numérique de la situation dans les états-majors."
+  - title: "Open source"
+    text: "Nous développons et diffusons des logiciels open source qui servent ce but."
+  - title: "D'utilité publique"
+    text: "L'association ne poursuit pas de but lucratif et utilise toutes ses recettes pour remplir son but."
+  - title: "Bénévolat"
+    text: "Les organes de l'association travaillent en principe bénévolement."
+  - title: "sitrep"
+    text: "Notre logiciel de représentation électronique de la situation s'appelle sitrep. Plus d'informations sur [sitrep.ch](https://sitrep.ch)."
+  - title: "Formations"
+    text: "Pour nos membres donateurs, nous proposons des formations sitrep pour les états-majors et l'aide à la conduite."
+about:
+  title: "Et sitrep ?"
+  text: "sitrep est le logiciel open source de l'association pour la représentation électronique de la situation dans les états-majors. Fonctionnalités, démo et documentation : [sitrep.ch](https://sitrep.ch)."
+cta_title: "Contribuer"
+cta:
+  - title: "Devenir membre donateur"
+    text: "Soutenez le développement de sitrep et profitez de formations pour votre état-major."
+    label: "Vers les membres donateurs"
+    url: "membre-donateur/"
+  - title: "L'association"
+    text: "But, organisation et fonctionnement de l'association F-ELD."
+    label: "En savoir plus sur l'association"
+    url: "association/"
+  - title: "Découvrir sitrep"
+    text: "Le logiciel de l'association : fonctionnalités, démo et documentation."
+    label: "Vers sitrep.ch"
+    url: "https://sitrep.ch"
+---
+L'association F-ELD promeut le suivi numérique de la situation dans les états-majors et développe pour cela des logiciels open source.

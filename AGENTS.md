@@ -88,3 +88,9 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
 command is `scripts/cloudflare-build.sh`, the deploy command `npx wrangler deploy`. Other branches get a
 preview build (drafts included, `noindex`) at `https://<branch>-f-eld-ch.f-eld.workers.dev/`.
 `www.f-eld.ch` redirects to `f-eld.ch` (Redirect Rule in the Cloudflare dashboard, not in this repo).
+
+## License
+
+Code (theme, layouts, scripts, workflows, configuration) is **AGPL-3.0** (`LICENSE`), the texts in `content/` are
+**CC BY-SA 4.0** (`LICENSE-CONTENT`). The logos and the names F-ELD and sitrep are not covered, see the README. Do not
+add third-party material or text without checking that it may be reused. Do not change the license files.

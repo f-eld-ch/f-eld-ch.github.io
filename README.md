@@ -45,5 +45,14 @@ Work on a branch and open a pull request; do not push to `main`. Titles follow
 [Conventional Commits](https://www.conventionalcommits.org). Translations are drafted by us and should be reviewed by
 native speakers.
 
+## License
+
+| What | License |
+| --- | --- |
+| **Code:** the theme (`themes/sitrep/`, a copy of the theme of sitrep.ch), `layouts/`, scripts, workflows and configuration | [AGPL-3.0](LICENSE), like [sitrep](https://github.com/f-eld-ch/sitrep) |
+| **Content:** texts of the pages (`content/`) | [CC BY-SA 4.0](LICENSE-CONTENT). Please credit "Verein F-ELD, f-eld.ch" |
+| **Font** B612 (`themes/sitrep/static/fonts/`) | SIL Open Font License 1.1 ([`LICENSE-B612.txt`](themes/sitrep/static/fonts/LICENSE-B612.txt)) |
+| **Not covered:** the logos and the names F-ELD and sitrep (`static/brand/`, `themes/sitrep/static/brand/`) | Not licensed under these terms. All rights remain with the Verein F-ELD |
+
 Questions about the association: [info@f-eld.ch](mailto:info@f-eld.ch) ·
 Questions about sitrep or the service: [info@sitrep.ch](mailto:info@sitrep.ch)

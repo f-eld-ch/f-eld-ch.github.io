@@ -30,7 +30,7 @@ defaultContentLanguageInSubdir = false
   weight = 30
 
 [params]
-  description = "F-ELD - Verein Förderung der elektronischen Lagedarstellung"
+  description = "Verein Förderung der elektronischen Lagedarstellung"
   repo = "https://github.com/f-eld-ch"
   email = "info@sitrep.ch"
   sitrep = "https://sitrep.ch"

@@ -14,7 +14,7 @@ facts:
   - title: "Di pubblica utilità"
     text: "L'associazione non persegue scopo di lucro e utilizza tutte le entrate per raggiungere il proprio scopo."
   - title: "A titolo volontario"
-    text: "Gli organi dell'associazione operano in linea di principio a titolo volontario."
+    text: "Gli organi dell'associazione operano in linea di principio a titolo volontario. I soci sono specialisti della protezione civile e dell'esercito e conoscono il lavoro di stato maggiore e l'aiuto alla condotta per esperienza pratica."
   - title: "sitrep"
     text: "Il nostro software per la rappresentazione elettronica della situazione si chiama sitrep. Maggiori informazioni su [sitrep.ch](https://sitrep.ch)."
   - title: "Formazioni"

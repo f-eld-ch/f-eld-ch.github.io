@@ -14,7 +14,7 @@ facts:
   - title: "D'utilité publique"
     text: "L'association ne poursuit pas de but lucratif et utilise toutes ses recettes pour remplir son but."
   - title: "Bénévolat"
-    text: "Les organes de l'association travaillent en principe bénévolement."
+    text: "Les organes de l'association travaillent en principe bénévolement. Les membres sont des spécialistes de la protection civile et de l'armée et connaissent le travail d'état-major et l'aide à la conduite par la pratique."
   - title: "sitrep"
     text: "Notre logiciel de représentation électronique de la situation s'appelle sitrep. Plus d'informations sur [sitrep.ch](https://sitrep.ch)."
   - title: "Formations"

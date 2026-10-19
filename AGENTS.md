@@ -18,6 +18,8 @@ this site mentions sitrep and links to it, but is about the association (purpose
 
 The Hugo version is pinned in **`.hugo-version`** (single source of truth, read by the Cloudflare build and
 the GitHub workflow). The non-extended build is enough.
+A weekly workflow (`.github/workflows/hugo-update.yaml`, `scripts/update-hugo.sh`) opens a pull request when a new
+Hugo release is out, after a test build; `scripts/update-hugo.sh --dry-run` shows what it would do.
 
 ```sh
 hugo server                 # live preview on http://localhost:1313
@@ -39,6 +41,7 @@ static/                    site specific static files (overrides of the theme, e
 themes/sitrep/             COPY of the theme of sitrep.ch, do not edit (see below)
 scripts/sync-theme.sh      copy the theme from ../sitrep.ch
 scripts/sync-brand.sh      copy the F-ELD lockups from ../brand
+scripts/update-hugo.sh      weekly Hugo upgrade check (used by the hugo-update workflow)
 scripts/cloudflare-build.sh  build script for Cloudflare Workers Builds
 wrangler.jsonc             Cloudflare Workers config: serves public/ as static assets
 .hugo-version              pinned Hugo version

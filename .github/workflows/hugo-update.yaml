@@ -1,0 +1,22 @@
+name: Hugo update
+# Weekly check for a new Hugo release. Opens a pull request that changes .hugo-version
+# (see scripts/update-hugo.sh). Needs the repository setting
+# "Allow GitHub Actions to create and approve pull requests" (Settings > Actions > General).
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays, 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Open a pull request for a new Hugo release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/update-hugo.sh

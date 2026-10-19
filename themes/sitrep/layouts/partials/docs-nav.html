@@ -1,0 +1,33 @@
+{{ $cur := . }}
+{{ $docs := site.GetPage "/docs" }}
+<div class="docs-side">
+<button type="button" class="docs-toggle" aria-expanded="false" aria-controls="docs-nav" data-docs-toggle>
+  <span>☰ {{ i18n "docs_menu" }}</span><span class="here">{{ $cur.Title }}</span>
+</button>
+<nav class="docs-nav" id="docs-nav" aria-label="Docs">
+  {{ range $docs.Sections }}
+  {{ $group := . }}
+  <section class="group{{ if or ($cur.IsDescendant $group) (eq $cur $group) }} is-current{{ end }}">
+    <h2><a href="{{ .RelPermalink }}"{{ if eq $cur.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></h2>
+    <ul class="quads">
+      {{ range .Sections }}
+      <li>
+        <a href="{{ .RelPermalink }}"{{ if eq $cur.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+        {{ if or ($cur.IsDescendant .) (eq $cur .) }}
+        {{ $quad := . }}{{ $cats := .Sections.ByWeight }}
+        <ul class="pages">
+          {{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $cur.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
+          {{ range $cats }}
+          <li class="cat"><a href="{{ .RelPermalink }}"{{ if eq $cur.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+            <ul>{{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $cur.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}</ul>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</nav>
+</div>

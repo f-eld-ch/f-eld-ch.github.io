@@ -1,0 +1,6 @@
+{{/* Notices for docs pages that are not available in the current site language. */}}
+{{ if eq .Params.contentlang "en" }}
+<p class="notice" role="note"><strong>EN</strong> {{ i18n "english_only" }}</p>
+{{ else if and (ne site.Language.Lang site.Params.defaultlang) .File (not (strings.Contains .File.LogicalName (printf ".%s." site.Language.Lang))) }}
+<p class="notice" role="note"><strong>DE</strong> {{ i18n "untranslated" }}</p>
+{{ end }}

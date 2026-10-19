@@ -1,0 +1,4 @@
+{{ define "main" }}
+<div class="wrap"><h1>{{ .Title }}</h1>
+  <ul class="post-list">{{ range .Pages }}{{ partial "post-item.html" . }}{{ end }}</ul></div>
+{{ end }}

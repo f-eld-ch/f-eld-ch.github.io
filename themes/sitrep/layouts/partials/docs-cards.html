@@ -1,0 +1,4 @@
+{{- /* Cards for a list of pages. Context: the pages. */ -}}
+<ul class="cards">
+  {{ range .ByWeight }}<li><a class="card" href="{{ .RelPermalink }}"><h3>{{ .Title }} {{ partial "draft-badge.html" . }}</h3><p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p></a></li>{{ end }}
+</ul>

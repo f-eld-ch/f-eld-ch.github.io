@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="wrap docs">
+  {{ partial "docs-nav.html" . }}
+  <article>
+    {{ $docs := site.GetPage "/docs" }}
+    {{ $crumbs := slice }}{{ range .Ancestors.Reverse }}{{ if and (not .IsHome) (ne .RelPermalink $docs.RelPermalink) }}{{ $crumbs = $crumbs | append .Title }}{{ end }}{{ end }}
+    <p class="muted">{{ delimit $crumbs " / " }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ partial "draft-notice.html" . }}
+    {{ partial "untranslated.html" . }}
+    {{ $dx := .Params.diataxis }}{{ range .Ancestors }}{{ if and (not $dx) .Params.diataxis }}{{ $dx = .Params.diataxis }}{{ end }}{{ end }}
+    <p>{{ partial "diataxis-badge.html" (dict "Params" (dict "diataxis" $dx)) }}</p>
+    {{ $hasToc := and .TableOfContents (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") }}
+    <div class="doc-body{{ if $hasToc }} has-toc{{ end }}">
+      <div class="prose"{{ with .Params.contentlang }} lang="{{ . }}"{{ end }}>{{ .Content }}</div>
+      {{ if $hasToc }}<aside class="toc" aria-label="{{ i18n "on_this_page" }}"><strong>{{ i18n "on_this_page" }}</strong>{{ .TableOfContents }}</aside>{{ end }}
+    </div>
+    <div class="pager">
+      <span>{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</span>
+      <span>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</span>
+    </div>
+  </article>
+</div>
+{{ end }}

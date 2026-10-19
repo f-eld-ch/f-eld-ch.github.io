@@ -1,0 +1,18 @@
+{{ with .Params.cta }}
+<section class="cta">
+  <div class="wrap">
+    <h2>{{ $.Params.cta_title }}</h2>
+    <ul class="cards cols-3">
+      {{ range . }}
+      <li>
+        <a class="card cta-card" href="{{ if hasPrefix .url "http" }}{{ .url }}{{ else }}{{ .url | relLangURL }}{{ end }}">
+          <h3>{{ .title }}</h3>
+          <p>{{ .text }}</p>
+          <span class="cta-label">{{ .label }} →</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}

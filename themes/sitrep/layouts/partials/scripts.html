@@ -1,0 +1,31 @@
+<script>
+  document.querySelector("[data-theme-toggle]").addEventListener("click", function () {
+    var root = document.documentElement;
+    var dark = root.getAttribute("data-theme") === "dark" ||
+      (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+  document.addEventListener("click", function (e) {
+    var d = document.querySelector(".lang-switch[open]");
+    if (d && !d.contains(e.target)) d.removeAttribute("open");
+  });
+  document.addEventListener("keydown", function (e) {
+    var d = document.querySelector(".lang-switch[open]");
+    if (d && e.key === "Escape") { d.removeAttribute("open"); d.querySelector("summary").focus(); }
+  });
+  var menuBtn = document.querySelector("[data-menu-toggle]"), nav = document.getElementById("main-nav");
+  menuBtn.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && nav.classList.contains("open")) { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); menuBtn.focus(); }
+  });
+  var docsBtn = document.querySelector("[data-docs-toggle]");
+  if (docsBtn) docsBtn.addEventListener("click", function () {
+    var open = document.getElementById("docs-nav").classList.toggle("open");
+    docsBtn.setAttribute("aria-expanded", open);
+  });
+</script>

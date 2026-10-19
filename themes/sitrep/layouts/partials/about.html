@@ -1,0 +1,9 @@
+{{ with .Params.about }}
+<section class="about">
+  <div class="wrap">
+    <h2>{{ .title }}</h2>
+    <p>{{ .text | markdownify }}</p>
+    {{ with site.GetPage "/ueber-uns" }}<p><a href="{{ .RelPermalink }}">{{ $.Params.about.link }} →</a></p>{{ end }}
+  </div>
+</section>
+{{ end }}

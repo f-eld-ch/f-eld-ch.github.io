@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="wrap docs">
+  {{ partial "docs-nav.html" . }}
+  <div>
+    <h1>{{ .Title }}</h1>
+    {{ partial "draft-notice.html" . }}
+    {{ partial "untranslated.html" . }}
+    <div class="prose">{{ .Content }}</div>
+    {{ if .Params.diataxis }}
+    {{- /* A quadrant: its pages, grouped by category (a sub-folder). */ -}}
+    {{ $cats := .Sections.ByWeight }}
+    {{ with .RegularPages }}{{ partial "docs-cards.html" . }}{{ end }}
+    {{ range $cats }}
+    <section class="doc-category">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ partial "draft-badge.html" . }}</h2>
+      {{ with .RegularPages }}{{ partial "docs-cards.html" . }}{{ end }}
+    </section>
+    {{ end }}
+    {{ else }}
+    {{ if .Sections }}
+    <ul class="cards{{ if eq (len .Sections) 4 }} cols-2{{ end }}">
+      {{ range .Sections }}<li><a class="card" href="{{ .RelPermalink }}"><h2>{{ .Title }} {{ partial "draft-badge.html" . }}</h2><p>{{ with .Description }}{{ . }}{{ end }}</p></a></li>{{ end }}
+    </ul>
+    {{ end }}
+    {{ with .RegularPages }}{{ partial "docs-cards.html" . }}{{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,6 @@
+{{/* Status always carries text, never colour alone. Usage: {{< note type="warning" >}}...{{< /note >}} */}}
+{{ $t := .Get "type" | default "info" }}
+<aside class="card" style="border-left: 6px solid var(--sitrep-color-{{ if eq $t "warning" }}warning{{ else if eq $t "error" }}error{{ else }}info{{ end }})">
+  <strong>{{ $t | upper }}</strong>
+  {{ .Inner | markdownify }}
+</aside>

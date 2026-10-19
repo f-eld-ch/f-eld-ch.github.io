@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap hero-text">
+    <h1 class="hero-logo">
+      <img class="logo-light" src="{{ "brand/lockup-blue.svg" | relURL }}" alt="{{ .Title }}" width="308" height="96" style="aspect-ratio: 308 / 96">
+      <img class="logo-dark" src="{{ "brand/lockup-white.svg" | relURL }}" alt="" width="308" height="96" style="aspect-ratio: 308 / 96" aria-hidden="true">
+    </h1>
+    <div class="lead">{{ .Content }}</div>
+    <p class="actions">
+      {{ range $i, $c := .Params.hero_ctas }}<a class="button{{ if gt $i 0 }} secondary{{ end }}" href="{{ if hasPrefix $c.url "http" }}{{ $c.url }}{{ else }}{{ $c.url | relLangURL }}{{ end }}">{{ $c.label }}</a>{{ end }}
+    </p>
+  </div>
+</section>
+{{ partial "facts.html" . }}
+{{ partial "about.html" . }}
+{{ partial "cta.html" . }}
+{{ end }}

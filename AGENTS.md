@@ -51,10 +51,11 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
   changes go into `layouts/` (they override the theme's files) and `static/`.
 - Design rules (brand tokens, one font family, light/dark mode, 44px touch targets, no JS dependencies) are
   described in the AGENTS.md of sitrep.ch.
-- **Logo:** until the F-ELD lockups exist in the `f-eld-ch/brand` repository, the site shows the sitrep.ch
-  lockups of the theme. Then add `static/brand/lockup-*.svg` (same file names as in the theme) and adjust the
-  `width`/`height` of the logo images in `layouts/partials/header.html` and `layouts/index.html` to the new
-  aspect ratio.
+- **Logo:** `static/brand/feld-lockup-light.png` and `feld-lockup-dark.png` are a **temporary raster draft** of the
+  F-ELD lockup (transparent, trimmed, the dark one has a white wordmark), used by `layouts/partials/header.html`
+  and `layouts/index.html`. Replace them with the SVG lockups once they are in the `f-eld-ch/brand` repository
+  (same names as in the theme: `lockup-on-paper.svg`, `lockup-on-ink.svg`, `lockup-blue.svg`, `lockup-white.svg`)
+  and adjust `width`, `height` and the inline `aspect-ratio` of the logo images to the new proportions.
 
 ## Content
 

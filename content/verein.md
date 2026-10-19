@@ -15,6 +15,10 @@ Der Verein fördert und verbreitet die digitale Lagebewirtschaftung in Führungs
 - Für seine **Gönnermitglieder** bietet er sitrep-Schulungen für Stäbe und die Führungsunterstützung an. Mehr dazu unter [Gönnermitglied werden]({{< relref "/goenner" >}}).
 - Seine **Organe** sind grundsätzlich ehrenamtlich tätig.
 
+## Mitglieder
+
+Die Mitglieder des Vereins F-ELD sind Profis aus Zivilschutz und Militär. Sie sind bestens mit Stabsarbeit und einer effizienten Führungsunterstützung vertraut.
+
 ## Statuten
 
 Die Statuten des Vereins sind öffentlich einsehbar: [Statuten des Vereins F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub).

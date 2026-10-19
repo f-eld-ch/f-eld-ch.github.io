@@ -16,6 +16,10 @@ L'associazione promuove e diffonde l'elaborazione digitale della situazione negl
 - Per i propri **soci sostenitori** offre formazioni su sitrep per gli stati maggiori e l'aiuto alla condotta. Maggiori informazioni sotto [Diventare socio sostenitore]({{< relref "/goenner" >}}).
 - I suoi **organi** operano in linea di principio a titolo volontario.
 
+## Soci
+
+I membri dell'associazione F-ELD sono professionisti della protezione civile e dell'esercito. Conoscono a fondo il lavoro di stato maggiore e un aiuto alla condotta efficiente.
+
 ## Statuti
 
 Gli statuti dell'associazione sono pubblici: [Statuti dell'associazione F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub) (in tedesco).

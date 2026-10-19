@@ -16,6 +16,10 @@ L'association promeut et diffuse le suivi numérique de la situation dans les é
 - Pour ses **membres donateurs**, elle propose des formations sitrep pour les états-majors et l'aide à la conduite. Plus d'informations sous [Devenir membre donateur]({{< relref "/goenner" >}}).
 - Ses **organes** travaillent en principe bénévolement.
 
+## Membres
+
+Les membres de l'association F-ELD sont des professionnels de la protection civile et de l'armée. Ils connaissent parfaitement le travail d'état-major et une aide à la conduite efficace.
+
 ## Statuts
 
 Les statuts de l'association sont publics : [Statuts de l'association F-ELD](https://docs.google.com/document/d/e/2PACX-1vQCJ16YY_pAEi9F0GdFuIV8ts9GRRdwQl1wiD532mbrKWJjhBNFRZ58YBEB0reIDm1rg3Dyw8L-fUxO/pub) (en allemand).

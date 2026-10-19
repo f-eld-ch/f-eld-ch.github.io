@@ -35,8 +35,8 @@ affected pages (light and dark mode, a narrow viewport of ~400px).
 
 ```
 hugo.toml                  config, menu, params (email, sitrep URL)
-content/                   _index.md (home), verein.md, goenner.md
-layouts/                   site specific overrides: index.html (home), partials/header.html, partials/footer.html
+content/                   _index.md (home), verein.md, goenner.md, hardware/ (draft, page bundle with images)
+layouts/                   site specific overrides: index.html (home), _default/single.html (draft notice), partials/header.html, partials/footer.html
 static/                    site specific static files (overrides of the theme, e.g. brand/ logos)
 themes/sitrep/             COPY of the theme of sitrep.ch, do not edit (see below)
 scripts/sync-theme.sh      copy the theme from ../sitrep.ch
@@ -81,6 +81,9 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
   the service go to `info@sitrep.ch`.
 - Link to sitrep via `params.sitrep` or `https://sitrep.ch`; do not duplicate its product content here.
 - Link between pages with `{{< relref "/path" >}}`.
+- Pages that are not ready carry `draft: true`: they show up in preview builds (with a notice and `[Entwurf]` in the title)
+  but not on the live site. A draft page that defines its own menu entry (`menus: main:` in the front matter, like
+  `hardware/index.md`) also disappears from the menu in production. Do not `relref` to a draft page from a published one.
 
 ## Deployment
 

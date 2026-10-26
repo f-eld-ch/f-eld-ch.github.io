@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="wrap">
+  <h1>{{ .Title }}</h1>
+  <div class="prose">{{ .Content }}</div>
+  <nav class="jump" aria-label="{{ i18n "on_this_page" }}">
+    <ul>{{ range .Params.features }}<li><a href="#{{ .id }}">{{ .title }}</a></li>{{ end }}</ul>
+  </nav>
+  {{ range $f := .Params.features }}
+  <section class="feature" id="{{ $f.id }}">
+    <div>
+      <h2>{{ $f.title }}{{ with $f.badge }} <span class="badge">{{ . }}</span>{{ end }}</h2>
+      <p>{{ $f.text }}</p>
+      {{ with $f.points }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    </div>
+    <div class="shots">
+      {{ with $f.image }}<img src="{{ . | relURL }}" alt="{{ $f.image_alt | default $f.title }}" loading="lazy">{{ end }}
+      {{ with $f.image2 }}<img src="{{ . | relURL }}" alt="{{ $f.image2_alt }}" loading="lazy">{{ end }}
+    </div>
+  </section>
+  {{ end }}
+  <p><a class="button" href="{{ site.Params.demo }}">{{ i18n "try_demo" }}</a></p>
+</div>
+{{ end }}

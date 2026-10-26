@@ -1,0 +1,40 @@
+---
+title: "F-ELD"
+hero_ctas:
+  - label: "Gönnermitglied werden"
+    url: "goenner/"
+  - label: "Der Verein"
+    url: "verein/"
+facts_title: "Wofür steht F-ELD?"
+facts:
+  - title: "Lagebewirtschaftung fördern"
+    text: "Wir fördern und verbreiten die digitale Lagebewirtschaftung in Führungsstäben."
+  - title: "Open Source"
+    text: "Wir entwickeln und verbreiten Open-Source-Software, die diesem Zweck dient."
+  - title: "Gemeinnützig und ehrenamtlich"
+    text: "Der Verein arbeitet nicht gewinnorientiert und verwendet alle Einnahmen zur Erfüllung seines Zwecks. Seine Organe sind grundsätzlich ehrenamtlich tätig."
+  - title: "Aus der Praxis"
+    text: "Die Aktivmitglieder sind Fachleute aus Zivilschutz und Militär mit Praxiserfahrung in Stabsarbeit und Führungsunterstützung."
+  - title: "sitrep"
+    text: "Unsere Software für die elektronische Lagedarstellung heisst sitrep. Mehr dazu auf [sitrep.ch](https://sitrep.ch)."
+  - title: "Schulungen"
+    text: "Für Gönnermitglieder bieten wir sitrep-Schulungen für Stäbe und die Führungsunterstützung an."
+about:
+  title: "Und sitrep?"
+  text: "sitrep ist die Open-Source-Software des Vereins für die elektronische Lagedarstellung in Führungsstäben. Funktionen, Demo und Dokumentation finden Sie auf [sitrep.ch](https://sitrep.ch)."
+cta_title: "Mitmachen"
+cta:
+  - title: "Gönnermitglied werden"
+    text: "Unterstützen Sie die Weiterentwicklung von sitrep und profitieren Sie von Schulungen für Ihren Stab."
+    label: "Zur Gönnermitgliedschaft"
+    url: "goenner/"
+  - title: "Der Verein"
+    text: "Zweck, Organisation und Arbeitsweise des Vereins F-ELD."
+    label: "Mehr über den Verein"
+    url: "verein/"
+  - title: "sitrep ansehen"
+    text: "Die Software des Vereins: Funktionen, Demo-Umgebung und Dokumentation."
+    label: "Zu sitrep.ch"
+    url: "https://sitrep.ch"
+---
+Der Verein F-ELD fördert die digitale Lagebewirtschaftung in Führungsstäben und entwickelt dafür Open-Source-Software.

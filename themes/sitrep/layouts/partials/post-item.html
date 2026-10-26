@@ -1,0 +1,11 @@
+{{- /* Blog list entry. Optional front matter `cover` names an image of the page bundle (shown as a thumbnail). */ -}}
+{{- $cover := "" -}}
+{{- with .Params.cover }}{{ with $.Resources.GetMatch . }}{{ $cover = .Fill "480x300 q80 center" }}{{ end }}{{ end -}}
+<li{{ if $cover }} class="has-cover"{{ end }}>
+  {{ with $cover }}<a class="post-thumb" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy"></a>{{ end }}
+  <div class="post-text">
+    <p class="muted"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>{{ range .Params.tags }} · <a href="{{ (site.GetPage (printf "/tags/%s" (. | urlize))).RelPermalink }}">{{ . }}</a>{{ end }}</p>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ partial "draft-badge.html" . }}</h2>
+    <p>{{ .Summary | plainify }}</p>
+  </div>
+</li>

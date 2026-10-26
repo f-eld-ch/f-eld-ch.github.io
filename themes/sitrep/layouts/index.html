@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap hero-text">
+    <h1 class="hero-logo">
+      <img class="logo-light" src="{{ "brand/lockup-blue.svg" | relURL }}" alt="{{ .Title }}" width="393" height="96">
+      <img class="logo-dark" src="{{ "brand/lockup-white.svg" | relURL }}" alt="" width="393" height="96" aria-hidden="true">
+    </h1>
+    <div class="lead">{{ .Content }}</div>
+    <p class="actions">
+      <a class="button" href="{{ site.Params.demo }}">{{ i18n "try_demo" }}</a>
+      {{ with .Params.hero_cta }}<a class="button secondary" href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
+    </p>
+  </div>
+  {{ with .Params.image }}
+  <div class="wrap hero-shot">
+    <img src="{{ . | relURL }}" alt="{{ $.Params.image_alt }}" width="1600" height="970" fetchpriority="high">
+  </div>
+  {{ end }}
+</section>
+{{ partial "facts.html" . }}
+{{ with .Params.showcase }}
+{{ $features := site.GetPage "/funktionen" }}
+<section class="showcase">
+  <div class="wrap">
+    {{ range . }}
+    <div class="feature">
+      <div>
+        <h2>{{ .title }}</h2>
+        <p>{{ .text }}</p>
+        <p><a href="{{ $features.RelPermalink }}#{{ .anchor }}">{{ $.Params.showcase_more }} →</a></p>
+      </div>
+      <img src="{{ .image | relURL }}" alt="" loading="lazy">
+    </div>
+    {{ end }}
+    <p class="showcase-all"><a class="button secondary" href="{{ $features.RelPermalink }}">{{ $.Params.showcase_all }}</a></p>
+  </div>
+</section>
+{{ end }}
+{{ partial "about.html" . }}
+{{ partial "cta.html" . }}
+{{ with site.GetPage "/blog" }}
+{{ if .Pages }}
+<section>
+  <div class="wrap">
+    <h2>{{ .Title }}</h2>
+    <ul class="post-list">
+      {{ range first 3 .Pages }}{{ partial "post-item.html" . }}{{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

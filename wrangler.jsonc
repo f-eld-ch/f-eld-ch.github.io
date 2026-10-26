@@ -1,0 +1,12 @@
+{
+  // Static site served by Cloudflare Workers (static assets). Built by scripts/cloudflare-build.sh.
+  "name": "f-eld-ch",
+  "compatibility_date": "2026-10-13",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  // Required by `wrangler preview` (non-production branch builds). Can stay empty:
+  // assets and compatibility settings are inherited from the top level.
+  "previews": {}
+}

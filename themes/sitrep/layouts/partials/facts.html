@@ -1,0 +1,8 @@
+{{ with .Params.facts }}
+<section class="facts">
+  <div class="wrap">
+    <h2>{{ $.Params.facts_title }}</h2>
+    <ul class="cards cols-3">{{ range . }}<li class="card"><h3>{{ .title }}</h3><p>{{ .text | markdownify }}</p></li>{{ end }}</ul>
+  </div>
+</section>
+{{ end }}

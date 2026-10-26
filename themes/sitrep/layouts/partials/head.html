@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .Draft }}[{{ i18n "draft" }}] {{ end }}{{ if .IsHome }}{{ site.Title }} - {{ site.Params.description }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "brand/symbol@32h.png" | relURL }}">
+<link rel="icon" type="image/svg+xml" href="{{ "brand/symbol.svg" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "brand/symbol@256h.png" | relURL }}">
+{{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">{{ end }}
+{{ with site.GetPage "/blog" }}{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">{{ end }}{{ end }}
+{{ range slice "b612-latin-400-normal" "b612-latin-700-normal" }}<link rel="preload" href="{{ printf "fonts/%s.woff2" . | relURL }}" as="font" type="font/woff2" crossorigin>{{ end }}
+{{ $css := slice (resources.Get "css/tokens.css") (resources.Get "css/site.css") | resources.Concat "css/main.css" | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<script>
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>

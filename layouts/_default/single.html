@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="wrap">
+  <div class="prose">
+    <h1>{{ .Title }}</h1>
+    {{ partial "draft-notice.html" . }}
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

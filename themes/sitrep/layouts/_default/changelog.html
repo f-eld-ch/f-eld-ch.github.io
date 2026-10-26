@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="wrap">
+  <div class="prose">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ $url := printf "https://api.github.com/repos/%s/releases?per_page=50" (strings.TrimPrefix "https://github.com/" site.Params.repo) }}
+    {{ $opts := dict "headers" (dict "Accept" "application/vnd.github+json") }}
+    {{ with os.Getenv "HUGO_GITHUB_TOKEN" }}{{ $opts = dict "headers" (dict "Accept" "application/vnd.github+json" "Authorization" (printf "Bearer %s" .)) }}{{ end }}
+    {{ $releases := slice }}
+    {{ $res := try (resources.GetRemote $url $opts) }}
+    {{ with $res.Err }}{{ warnf "changelog: %s" . }}{{ end }}
+    {{ with $res.Value }}{{ $releases = . | transform.Unmarshal }}{{ end }}
+    {{ if not $releases }}
+      <p>{{ i18n "changelog_unavailable" }} <a href="{{ site.Params.repo }}/releases">{{ i18n "changelog_github" }}</a></p>
+    {{ end }}
+    <div lang="en" class="changelog">
+    {{ range $releases }}
+      {{ if not (or .draft .prerelease) }}
+        {{ $sections := slice }}
+        {{ range after 1 (split (printf "\n%s" (replace .body "\r" "")) "\n### ") }}
+          {{ $lines := split . "\n" }}
+          {{ $kept := slice }}
+          {{ range after 1 $lines }}
+            {{ if and (strings.HasPrefix . "- ") (not (findRE `^- (\*\([a-z-]*(deps|ci)[a-z-]*\)\* )?(Bump|Update|Replace) ` .)) (not (findRE `\*\((deps|ci)[a-z-]*\)\*` .)) }}
+              {{ $kept = $kept | append (replaceRE ` - \(\[[0-9a-f]{7,40}\]\([^)]*\)\)$` "" .) }}
+            {{ end }}
+          {{ end }}
+          {{ if $kept }}{{ $sections = $sections | append (printf "### %s\n\n%s" (index $lines 0) (delimit $kept "\n")) }}{{ end }}
+        {{ end }}
+        <section class="release" id="{{ .tag_name }}">
+          <h2><a href="{{ .html_url }}">{{ .tag_name }}</a> <small class="muted"><time datetime="{{ .published_at }}">{{ dateFormat "2006-01-02" .published_at }}</time></small></h2>
+          {{ if $sections }}{{ delimit $sections "\n\n" | markdownify }}{{ else }}<p class="muted">{{ i18n "changelog_maintenance" }}</p>{{ end }}
+        </section>
+      {{ end }}
+    {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

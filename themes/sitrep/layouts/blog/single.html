@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="wrap post">
+  <div class="prose">
+    <p class="muted"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time></p>
+    <h1>{{ .Title }}</h1>
+    {{ partial "draft-notice.html" . }}
+    {{ .Content }}
+    <p><a href="{{ "blog/" | relLangURL }}">← {{ i18n "all_posts" }}</a></p>
+  </div>
+</article>
+{{ end }}

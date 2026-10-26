@@ -1,0 +1,4 @@
+name = "sitrep"
+license = "AGPL-3.0"
+description = "Marketing, blog and Diataxis docs theme built on the sitrep brand tokens"
+min_version = "0.158.0"

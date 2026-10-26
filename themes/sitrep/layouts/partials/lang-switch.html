@@ -1,0 +1,16 @@
+{{ if hugo.IsMultilingual }}
+<details class="lang-switch">
+  <summary aria-label="{{ i18n "language" }}: {{ upper site.Language.Lang }}">{{ upper site.Language.Lang }}</summary>
+  <ul>
+    {{ $cur := . }}
+    {{ range hugo.Sites }}
+    {{ $lang := .Language }}
+    {{ $target := .Home.RelPermalink }}
+    {{ if eq $lang.Lang $cur.Language.Lang }}{{ $target = $cur.RelPermalink }}
+    {{ else }}{{ range $cur.Translations }}{{ if eq .Language.Lang $lang.Lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+    {{ end }}
+    <li><a href="{{ $target }}" lang="{{ $lang.Locale }}" hreflang="{{ $lang.Locale }}"{{ if eq $lang.Lang $cur.Language.Lang }} aria-current="true"{{ end }}><span class="code">{{ upper $lang.Lang }}</span> {{ $lang.Label }}</a></li>
+    {{ end }}
+  </ul>
+</details>
+{{ end }}

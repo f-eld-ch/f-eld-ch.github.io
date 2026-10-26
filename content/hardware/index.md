@@ -1,7 +1,6 @@
 ---
 title: "Hardware"
 description: "Vorkonfigurierte Hardware für die Kommunikation im Einsatz: 5G-Box, WLAN-Box und Richtstrahl-Systeme."
-draft: true
 menus:
   main:
     weight: 25

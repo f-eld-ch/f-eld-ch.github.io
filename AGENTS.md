@@ -16,8 +16,8 @@ this site mentions sitrep and links to it, but is about the association (purpose
 
 ## Commands
 
-The Hugo version is pinned in **`.hugo-version`** (single source of truth, read by the Cloudflare build and
-the GitHub workflow). The non-extended build is enough.
+The Hugo version is pinned in **`.hugo-version`** (single source of truth, read by the Cloudflare build).
+The non-extended build is enough.
 A weekly workflow (`.github/workflows/hugo-update.yaml`, `scripts/update-hugo.sh`) opens a pull request when a new
 Hugo release is out, after a test build; `scripts/update-hugo.sh --dry-run` shows what it would do.
 
@@ -45,7 +45,6 @@ scripts/update-hugo.sh      weekly Hugo upgrade check (used by the hugo-update w
 scripts/cloudflare-build.sh  build script for Cloudflare Workers Builds
 wrangler.jsonc             Cloudflare Workers config: serves public/ as static assets
 .hugo-version              pinned Hugo version
-.github/workflows/hugo.yaml  GitHub Pages deployment, to be removed after the move to Cloudflare
 ```
 
 ## The theme
@@ -91,6 +90,7 @@ wrangler.jsonc             Cloudflare Workers config: serves public/ as static a
 command is `scripts/cloudflare-build.sh`, the deploy command `npx wrangler deploy`. Other branches get a
 preview build (drafts included, `noindex`) at `https://<branch>-f-eld-ch.f-eld.workers.dev/`.
 `www.f-eld.ch` redirects to `f-eld.ch` (Redirect Rule in the Cloudflare dashboard, not in this repo).
+GitHub Pages is no longer used.
 
 ## License
 

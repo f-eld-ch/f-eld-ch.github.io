@@ -7,13 +7,13 @@
 #
 # wrangler.jsonc serves the output directory (public/) as static assets.
 #
-# The Hugo version comes from .hugo-version (single source of truth, also used by the GitHub
-# Actions workflow). If the installed Hugo differs, the exact release is downloaded, so no
-# version has to be kept in sync in the Cloudflare dashboard.
+# The Hugo version comes from .hugo-version (single source of truth). If the installed Hugo
+# differs, the exact release is downloaded, so no version has to be kept in sync in the
+# Cloudflare dashboard.
 #
-# WORKERS_CI_BRANCH is set by Cloudflare. The production branch (main) is built like the
-# GitHub Actions workflow. Every other branch is a preview: it includes drafts and is marked
-# noindex. The preview URL is not known at build time, so baseURL stays as configured
+# WORKERS_CI_BRANCH is set by Cloudflare. The production branch (main) is built without
+# drafts. Every other branch is a preview: it includes drafts and is marked noindex.
+# The preview URL is not known at build time, so baseURL stays as configured
 # (relativeURLs keeps links and assets working on any host).
 set -euo pipefail
 
